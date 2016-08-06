@@ -1,0 +1,17 @@
+--非模板文件vvvv
+
+
+--第1步
+insert into t_menu (ID, NAME, ORDINAL, STATUS, TYPE, PARENT_ID, MODULE, OPTIONS, REMARKS, ICON, NAMESPACE, i18n_key)
+values ('report.foundStatistical', '账户综合查询报表', 0, '1', 'M', 'report', 'ReportFoundStatistical', '', '', '', '/report/foundStatistical', 'report.foundStatistical');
+
+--第2步
+insert into t_menu_action (ID, NAME, ORDINAL, STATUS, MENU_ID, PERMISSION_SCOPE, PERMISSION_ACTION, URI, REMARKS, i18n_key)
+values ('report.foundStatistical.query', '查看', 0, '1', 'report.foundStatistical', 65536, 'query', '/report/foundStatistical/query.do,/report/foundStatistical/view.do', '', 'report.foundStatistical.query');
+
+--第3步
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (3011, 'admin', 'report.foundStatistical', '', 1);
+
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (3012, 'admin', 'report.foundStatistical', 'report.foundStatistical.query', 65536);

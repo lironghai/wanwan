@@ -1,0 +1,5 @@
+	<!-- @describe报表 -->
+	<package name="report@Child" extends="global-json" namespace="/report/@child">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

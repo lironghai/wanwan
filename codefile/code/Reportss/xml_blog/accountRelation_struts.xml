@@ -1,0 +1,7 @@
+	<!-- 外部单位非关联方 blog -->
+	<package name="BlogAccountRelation" extends="global-json" namespace="/blog/accountRelation">
+		<action name="query" class="blogAction" method="query"></action> 
+	</package>
+	Tue Jul 26 21:08:20 CST 2016
+	
+	

@@ -1,0 +1,24 @@
+/**
+ * 预提费用余额报表按钮方法：点击查询按钮时触发
+ * 
+ */
+public String accountFeeLastReport() { 
+	Finder finder  = Finder.newInstance();
+	EAccountFeeLastView  geReportDataNew = finder.from(EAccountFeeLastView.class);
+	PageIterator<?> page = geReportService.findByPage(finder, pageNo, pageSize);
+	this.resultList = (List<EAccountFeeLastView>) page.getResult();
+	this.totalCount = page.getTotalCount();
+	return SUCCESS;
+}
+
+/**
+ * 预提费用余额报表入口方法：选择菜单时触发
+ * 
+ */
+public String prepareAccountFeeLastReport() {
+	geReportData = new GeReportData();
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+	geReportData.setStr3(sdf.format(new Date()));
+	return SUCCESS;
+}
+	

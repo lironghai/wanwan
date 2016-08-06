@@ -1,0 +1,5 @@
+	<!-- 有效账户报表 -->
+	<package name="reportFoundAccountEnable" extends="global-json" namespace="/report/foundAccountEnable">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

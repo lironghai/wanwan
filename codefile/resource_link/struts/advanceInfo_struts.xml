@@ -1,0 +1,5 @@
+	<!-- 预支信息统计报表 -->
+	<package name="reportAdvanceInfo" extends="global-json" namespace="/report/advanceInfo">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<!-- 预算 Tue Jun 14 20:12:12 CST 2016 模块 --> 
+	
+	<!-- 1 --> 
+	<package name="apply" extends="global-json" namespace="/budget/apply">
+		<action name="query" class="budgetAction" method="query"></action>
+		<action name="get" class="budgetAction" method="get"></action>
+		<action name="save" class="budgetAction" method="save"></action>
+		<action name="delete" class="budgetAction" method="delete"></action>
+	</package>
+	 
+
+</struts>

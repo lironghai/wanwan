@@ -1,0 +1,24 @@
+/**
+ * 供应商交易报表按钮方法：点击查询按钮时触发
+ * 
+ */
+public String purchaseSupplierReport() { 
+	Finder finder  = Finder.newInstance();
+	EPurchaseSupplierView  geReportDataNew = finder.from(EPurchaseSupplierView.class);
+	PageIterator<?> page = geReportService.findByPage(finder, pageNo, pageSize);
+	this.resultList = (List<EPurchaseSupplierView>) page.getResult();
+	this.totalCount = page.getTotalCount();
+	return SUCCESS;
+}
+
+/**
+ * 供应商交易报表入口方法：选择菜单时触发
+ * 
+ */
+public String preparePurchaseSupplierReport() {
+	geReportData = new GeReportData();
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+	geReportData.setStr3(sdf.format(new Date()));
+	return SUCCESS;
+}
+	

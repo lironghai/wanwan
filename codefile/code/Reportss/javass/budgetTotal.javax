@@ -1,0 +1,24 @@
+/**
+ * 预算月度季度年度费用使用情况汇总报表按钮方法：点击查询按钮时触发
+ * 
+ */
+public String budgetTotalReport() { 
+	Finder finder  = Finder.newInstance();
+	EBudgetTotalView  geReportDataNew = finder.from(EBudgetTotalView.class);
+	PageIterator<?> page = geReportService.findByPage(finder, pageNo, pageSize);
+	this.resultList = (List<EBudgetTotalView>) page.getResult();
+	this.totalCount = page.getTotalCount();
+	return SUCCESS;
+}
+
+/**
+ * 预算月度季度年度费用使用情况汇总报表入口方法：选择菜单时触发
+ * 
+ */
+public String prepareBudgetTotalReport() {
+	geReportData = new GeReportData();
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+	geReportData.setStr3(sdf.format(new Date()));
+	return SUCCESS;
+}
+	

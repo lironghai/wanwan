@@ -1,0 +1,5 @@
+	<!-- 记账报表 -->
+	<package name="reportRecord" extends="global-json" namespace="/report/record">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

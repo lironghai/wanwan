@@ -1,0 +1,17 @@
+--非模板文件vvvv
+
+
+--第1步
+insert into t_menu (ID, NAME, ORDINAL, STATUS, TYPE, PARENT_ID, MODULE, OPTIONS, REMARKS, ICON, NAMESPACE, i18n_key)
+values ('report.accountRelation', '外部单位非关联方报表', 0, '1', 'M', 'report', 'ReportAccountRelation', '', '', '', '/report/accountRelation', 'report.accountRelation');
+
+--第2步
+insert into t_menu_action (ID, NAME, ORDINAL, STATUS, MENU_ID, PERMISSION_SCOPE, PERMISSION_ACTION, URI, REMARKS, i18n_key)
+values ('report.accountRelation.query', '查看', 0, '1', 'report.accountRelation', 65536, 'query', '/report/accountRelation/query.do,/report/accountRelation/view.do', '', 'report.accountRelation.query');
+
+--第3步
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (3039, 'admin', 'report.accountRelation', '', 1);
+
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (3040, 'admin', 'report.accountRelation', 'report.accountRelation.query', 65536);

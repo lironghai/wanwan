@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<!-- 合同 Tue Jun 14 20:12:12 CST 2016 模块 --> 
+	
+	<!-- 1 --> 
+	<package name="apply" extends="global-json" namespace="/contract/apply">
+		<action name="query" class="contractAction" method="query"></action>
+		<action name="get" class="contractAction" method="get"></action>
+		<action name="save" class="contractAction" method="save"></action>
+		<action name="delete" class="contractAction" method="delete"></action>
+	</package>
+	 
+
+</struts>

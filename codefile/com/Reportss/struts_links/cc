@@ -1,0 +1,150 @@
+	<!-- 资产查询明细报表 -->
+	<package name="reportAccountCapitalDetail" extends="global-json" namespace="/report/accountCapitalDetail">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 固定资产采购余额明细报表 -->
+	<package name="reportAccountCapitalLastDetail" extends="global-json" namespace="/report/accountCapitalLastDetail">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 资产查询明细报表 -->
+	<package name="reportAccountCapitalQueryDetail" extends="global-json" namespace="/report/accountCapitalQueryDetail">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 销户账户报表 -->
+	<package name="reportAccountDisable" extends="global-json" namespace="/report/accountDisable">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 有效账户报表 -->
+	<package name="reportAccountEnable" extends="global-json" namespace="/report/accountEnable">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 预提费用明细报表 -->
+	<package name="reportAccountFeeDetail" extends="global-json" namespace="/report/accountFeeDetail">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 预提费用余额报表 -->
+	<package name="reportAccountFeeLast" extends="global-json" namespace="/report/accountFeeLast">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 固定资产采购余额明细报表 -->
+	<package name="reportAccountOtherCapitalLastDetail" extends="global-json" namespace="/report/accountOtherCapitalLastDetail">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 外部单位非关联方报表 -->
+	<package name="reportAccountOtherRelation" extends="global-json" namespace="/report/accountOtherRelation">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 外部单位非关联方报表 -->
+	<package name="reportAccountRelation" extends="global-json" namespace="/report/accountRelation">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 预支信息统计报表 -->
+	<package name="reportAdvanceInfo" extends="global-json" namespace="/report/advanceInfo">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 押金和备用金信息统计报表 -->
+	<package name="reportAdvancePrepareInfo" extends="global-json" namespace="/report/advancePrepareInfo">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 押金和备用金信息统计报表 -->
+	<package name="reportAdvancePrepare" extends="global-json" namespace="/report/advancePrepare">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 预支收款人信息报表 -->
+	<package name="reportAdvanceReceiveInfo" extends="global-json" namespace="/report/advanceReceiveInfo">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 预支收款人信息报表 -->
+	<package name="reportAdvanceReceive" extends="global-json" namespace="/report/advanceReceive">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 预支信息统计报表 -->
+	<package name="reportAdvance" extends="global-json" namespace="/report/advance">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 预算明细账报表 -->
+	<package name="reportBudgetDetail" extends="global-json" namespace="/report/budgetDetail">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 预算月度季度年度费用使用情况汇总报表 -->
+	<package name="reportBudgetTotal" extends="global-json" namespace="/report/budgetTotal">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 销户账户报表 -->
+	<package name="reportFoundAccountDisable" extends="global-json" namespace="/report/foundAccountDisable">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 有效账户报表 -->
+	<package name="reportFoundAccountEnable" extends="global-json" namespace="/report/foundAccountEnable">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 记账报表 -->
+	<package name="reportFoundRecord" extends="global-json" namespace="/report/foundRecord">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 账户综合查询报表 -->
+	<package name="reportFoundStatistical" extends="global-json" namespace="/report/foundStatistical">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 变动报表 -->
+	<package name="reportInvestmentChange" extends="global-json" namespace="/report/investmentChange">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 基金债券交易报表 -->
+	<package name="reportInvestmentFound" extends="global-json" namespace="/report/investmentFound">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 月结盘点报表 -->
+	<package name="reportInvestmentStatistical" extends="global-json" namespace="/report/investmentStatistical">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 个人电话费信息统计报表 -->
+	<package name="reportPhone" extends="global-json" namespace="/report/phone">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 采购价格跟踪报表 -->
+	<package name="reportPriceFollow" extends="global-json" namespace="/report/priceFollow">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 记账报表 -->
+	<package name="reportRecord" extends="global-json" namespace="/report/record">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 供应商交易报表 -->
+	<package name="reportSupplier" extends="global-json" namespace="/report/supplier">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	
+	<!-- 车辆信息统计报表 -->
+	<package name="reportVehicle" extends="global-json" namespace="/report/vehicle">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

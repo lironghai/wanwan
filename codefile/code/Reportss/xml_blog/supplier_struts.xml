@@ -1,0 +1,7 @@
+	<!-- 供应商交易 blog -->
+	<package name="BlogSupplier" extends="global-json" namespace="/blog/supplier">
+		<action name="query" class="blogAction" method="query"></action> 
+	</package>
+	Tue Jul 26 21:08:20 CST 2016
+	
+	

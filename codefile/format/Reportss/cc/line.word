@@ -1,0 +1,24 @@
+<th st-sort="dictionary.property00" app-locale="setting.advanceControl.advanceControl">预支控制信息vvvvvvvvv/</th>
+
+<th st-sort="dictionary.property00" app-locale="setting.advanceType.advanceType">预支类型信息vvvvvvvvv/</th>
+<th st-sort="dictionary.property00" app-locale="setting.advanceType.type">预支类型</th>
+<th st-sort="dictionary.property00" app-locale="setting.advanceType.budgetItem">预算科目</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseDetail.purchaseDetail">采购类型信息vvvvvvvvv/</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseDetail.isSure">是否复核</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseDetail.uint">计量单位</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchasePack.purchasePack">采购包信息vvvvvvvvv/</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchasePack.detail">采购明细</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchasePack.isSure">是否复核</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseType.purchaseType">采购类信息vvvvvvvvv/</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseType.dept">采购部门</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseType.budgetItem">预算科目</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseType.isCard">是否建卡</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseType.isSure">是否复核</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseType.isBat">是否批量</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseWay.purchaseWay">采购方式信息vvvvvvvvv/</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseWay.way">采购方式</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseWay.type">采购类别</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseWay.isComparePrice">是否比价</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseWay.priceMax">金额上限</th>
+<th st-sort="dictionary.property00" app-locale="setting.purchaseWay.supplier">供应商</th>
+<th st-sort="dictionary.property00" app-locale="setting.@field.@e">@c</th>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<!-- 报销 Tue Jun 14 20:12:12 CST 2016 模块 --> 
+	
+	<!-- 1 --> 
+	<package name="apply" extends="global-json" namespace="/reimburse/apply">
+		<action name="query" class="reimburseAction" method="query"></action>
+		<action name="get" class="reimburseAction" method="get"></action>
+		<action name="save" class="reimburseAction" method="save"></action>
+		<action name="delete" class="reimburseAction" method="delete"></action>
+	</package>
+	 
+
+</struts>

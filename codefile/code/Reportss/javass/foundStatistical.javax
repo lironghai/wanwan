@@ -1,0 +1,24 @@
+/**
+ * 账户综合查询报表按钮方法：点击查询按钮时触发
+ * 
+ */
+public String foundStatisticalReport() { 
+	Finder finder  = Finder.newInstance();
+	EFoundStatisticalView  geReportDataNew = finder.from(EFoundStatisticalView.class);
+	PageIterator<?> page = geReportService.findByPage(finder, pageNo, pageSize);
+	this.resultList = (List<EFoundStatisticalView>) page.getResult();
+	this.totalCount = page.getTotalCount();
+	return SUCCESS;
+}
+
+/**
+ * 账户综合查询报表入口方法：选择菜单时触发
+ * 
+ */
+public String prepareFoundStatisticalReport() {
+	geReportData = new GeReportData();
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+	geReportData.setStr3(sdf.format(new Date()));
+	return SUCCESS;
+}
+	

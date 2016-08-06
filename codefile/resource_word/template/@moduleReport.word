@@ -1,0 +1,17 @@
+advanceControl-预支控制信息vvvvvvvvv/---------------------------------------
+type-预支类型	age-账龄	control-控制逻辑	notDept-不适用的部门
+
+advanceType-预支类型信息vvvvvvvvv/---------------------------------------
+type-预支类型	budgetItem-预算科目	
+
+purchaseDetail-采购类型信息vvvvvvvvv/---------------------------------------
+isSure-是否复核	uint-计量单位	
+
+purchasePack-采购包信息vvvvvvvvv/---------------------------------------
+detail-采购明细	isSure-是否复核
+
+purchaseType-采购类信息vvvvvvvvv/---------------------------------------
+dept-采购部门	budgetItem-预算科目	isCard-是否建卡	isSure-是否复核	isBat-是否批量
+
+purchaseWay-采购方式信息vvvvvvvvv/---------------------------------------
+way-采购方式	type-采购类别	isComparePrice-是否比价	priceMax-金额上限	supplier-供应商				 

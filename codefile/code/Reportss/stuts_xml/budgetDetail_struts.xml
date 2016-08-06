@@ -1,0 +1,5 @@
+	<!-- 预算明细账报表 -->
+	<package name="reportBudgetDetail" extends="global-json" namespace="/report/budgetDetail">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

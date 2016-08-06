@@ -1,0 +1,7 @@
+	<!-- 固定资产采购余额明细 blog -->
+	<package name="BlogAccountCapitalLastDetail" extends="global-json" namespace="/blog/accountCapitalLastDetail">
+		<action name="query" class="blogAction" method="query"></action> 
+	</package>
+	Tue Jul 26 21:08:20 CST 2016
+	
+	

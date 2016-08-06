@@ -1,0 +1,7 @@
+	<!-- @describe blog -->
+	<package name="Blog@Child" extends="global-json" namespace="/blog/@child">
+		<action name="query" class="blogAction" method="query"></action> 
+	</package>
+	@time
+	
+	

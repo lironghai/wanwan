@@ -1,0 +1,7 @@
+	<!-- 月结盘点 blog -->
+	<package name="BlogInvestmentStatistical" extends="global-json" namespace="/blog/investmentStatistical">
+		<action name="query" class="blogAction" method="query"></action> 
+	</package>
+	Tue Jul 26 21:08:20 CST 2016
+	
+	

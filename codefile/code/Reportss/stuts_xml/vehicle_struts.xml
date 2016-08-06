@@ -1,0 +1,5 @@
+	<!-- 车辆信息统计报表 -->
+	<package name="reportVehicle" extends="global-json" namespace="/report/vehicle">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

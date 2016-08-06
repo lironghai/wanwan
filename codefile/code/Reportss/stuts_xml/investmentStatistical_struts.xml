@@ -1,0 +1,5 @@
+	<!-- 月结盘点报表 -->
+	<package name="reportInvestmentStatistical" extends="global-json" namespace="/report/investmentStatistical">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

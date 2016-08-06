@@ -1,0 +1,5 @@
+	<!-- 供应商交易报表 -->
+	<package name="reportSupplier" extends="global-json" namespace="/report/supplier">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

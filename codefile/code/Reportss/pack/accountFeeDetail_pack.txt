@@ -1,0 +1,52 @@
+   /*报表:预提费用明细*/  
+   procedure AccountFeeDetail(p_param1 in varchar2 ,   --车牌号
+                      p_param2 in varchar2 ,   --车辆使用类型
+                      p_param3 in varchar2 ,   --车辆使用部门
+                      p_messagecode   out varchar2, --0成功
+                      p_messagedesc   out varchar2 --错误原因
+                  ) 
+  is
+   
+   v_taskid number;
+   v_type   varchar2(3);
+   
+   begin
+        --车辆使用类型做转换
+       if p_param2 = '01' then
+         v_type := '0';
+       elsif p_param2 = '02' then 
+         v_type := '1';
+       else 
+         v_type := '';
+       end if;
+       
+       select dataidseq.nextval into v_taskid from dual;
+       p_messagecode := '0';
+       p_messagedesc := v_taskid ; 
+   
+             insert into gereportdata
+               (reportdataid,
+                dataid,
+                str1, --成本中心
+                str2, --预算科目
+                str3, --费用类型
+                str4
+              
+                )
+               select reportdataidseq.nextval,
+                      v_taskid, 
+                      supplierno,
+                      suppliercode,
+                      dutynum,
+                      suppliercname
+                    
+                 from gesupplier;
+        
+         commit;
+         exception when others then
+           rollback;
+            p_messagecode := '1';
+            p_messagedesc := sqlerrm ; 
+           dbms_output.put_line(sqlerrm);
+        
+   end AccountFeeDetail;

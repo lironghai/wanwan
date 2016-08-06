@@ -1,0 +1,5 @@
+	<!-- 预提费用明细报表 -->
+	<package name="reportAccountFeeDetail" extends="global-json" namespace="/report/accountFeeDetail">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

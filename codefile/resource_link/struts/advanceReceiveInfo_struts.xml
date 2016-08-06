@@ -1,0 +1,5 @@
+	<!-- 预支收款人信息报表 -->
+	<package name="reportAdvanceReceiveInfo" extends="global-json" namespace="/report/advanceReceiveInfo">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

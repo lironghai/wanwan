@@ -1,0 +1,7 @@
+	<!-- 有效账户 blog -->
+	<package name="BlogFoundAccountEnable" extends="global-json" namespace="/blog/foundAccountEnable">
+		<action name="query" class="blogAction" method="query"></action> 
+	</package>
+	Tue Jul 26 21:08:20 CST 2016
+	
+	

@@ -1,0 +1,5 @@
+	<!-- 销户账户报表 -->
+	<package name="reportFoundAccountDisable" extends="global-json" namespace="/report/foundAccountDisable">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

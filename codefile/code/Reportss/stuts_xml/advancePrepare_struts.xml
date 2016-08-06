@@ -1,0 +1,5 @@
+	<!-- 押金和备用金信息统计报表 -->
+	<package name="reportAdvancePrepare" extends="global-json" namespace="/report/advancePrepare">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

@@ -1,0 +1,17 @@
+--非模板文件vvvv
+
+
+--第1步
+insert into t_menu (ID, NAME, ORDINAL, STATUS, TYPE, PARENT_ID, MODULE, OPTIONS, REMARKS, ICON, NAMESPACE, i18n_key)
+values ('report.accountCapitalDetail', '资产查询明细报表', 0, '1', 'M', 'report', 'ReportAccountCapitalDetail', '', '', '', '/report/accountCapitalDetail', 'report.accountCapitalDetail');
+
+--第2步
+insert into t_menu_action (ID, NAME, ORDINAL, STATUS, MENU_ID, PERMISSION_SCOPE, PERMISSION_ACTION, URI, REMARKS, i18n_key)
+values ('report.accountCapitalDetail.query', '查看', 0, '1', 'report.accountCapitalDetail', 65536, 'query', '/report/accountCapitalDetail/query.do,/report/accountCapitalDetail/view.do', '', 'report.accountCapitalDetail.query');
+
+--第3步
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (3031, 'admin', 'report.accountCapitalDetail', '', 1);
+
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (3032, 'admin', 'report.accountCapitalDetail', 'report.accountCapitalDetail.query', 65536);

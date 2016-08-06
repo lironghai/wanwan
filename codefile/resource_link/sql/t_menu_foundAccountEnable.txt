@@ -1,0 +1,17 @@
+--非模板文件vvvv
+
+
+--第1步
+insert into t_menu (ID, NAME, ORDINAL, STATUS, TYPE, PARENT_ID, MODULE, OPTIONS, REMARKS, ICON, NAMESPACE, i18n_key)
+values ('report.foundAccountEnable', '有效账户报表', 0, '1', 'M', 'report', 'ReportFoundAccountEnable', '', '', '', '/report/foundAccountEnable', 'report.foundAccountEnable');
+
+--第2步
+insert into t_menu_action (ID, NAME, ORDINAL, STATUS, MENU_ID, PERMISSION_SCOPE, PERMISSION_ACTION, URI, REMARKS, i18n_key)
+values ('report.foundAccountEnable.query', '查看', 0, '1', 'report.foundAccountEnable', 65536, 'query', '/report/foundAccountEnable/query.do,/report/foundAccountEnable/view.do', '', 'report.foundAccountEnable.query');
+
+--第3步
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (3013, 'admin', 'report.foundAccountEnable', '', 1);
+
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (3014, 'admin', 'report.foundAccountEnable', 'report.foundAccountEnable.query', 65536);

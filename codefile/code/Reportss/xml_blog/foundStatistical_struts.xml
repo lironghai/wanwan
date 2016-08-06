@@ -1,0 +1,7 @@
+	<!-- 账户综合查询 blog -->
+	<package name="BlogFoundStatistical" extends="global-json" namespace="/blog/foundStatistical">
+		<action name="query" class="blogAction" method="query"></action> 
+	</package>
+	Tue Jul 26 21:08:20 CST 2016
+	
+	

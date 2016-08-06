@@ -1,0 +1,7 @@
+	<!-- 预提费用余额 blog -->
+	<package name="BlogAccountFeeLast" extends="global-json" namespace="/blog/accountFeeLast">
+		<action name="query" class="blogAction" method="query"></action> 
+	</package>
+	Tue Jul 26 21:08:20 CST 2016
+	
+	

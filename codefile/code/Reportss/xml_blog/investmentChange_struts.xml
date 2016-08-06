@@ -1,0 +1,7 @@
+	<!-- 变动 blog -->
+	<package name="BlogInvestmentChange" extends="global-json" namespace="/blog/investmentChange">
+		<action name="query" class="blogAction" method="query"></action> 
+	</package>
+	Tue Jul 26 21:08:20 CST 2016
+	
+	

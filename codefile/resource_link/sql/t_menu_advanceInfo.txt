@@ -1,0 +1,17 @@
+--非模板文件vvvv
+
+
+--第1步
+insert into t_menu (ID, NAME, ORDINAL, STATUS, TYPE, PARENT_ID, MODULE, OPTIONS, REMARKS, ICON, NAMESPACE, i18n_key)
+values ('report.advanceInfo', '预支信息统计报表', 0, '1', 'M', 'report', 'ReportAdvanceInfo', '', '', '', '/report/advanceInfo', 'report.advanceInfo');
+
+--第2步
+insert into t_menu_action (ID, NAME, ORDINAL, STATUS, MENU_ID, PERMISSION_SCOPE, PERMISSION_ACTION, URI, REMARKS, i18n_key)
+values ('report.advanceInfo.query', '查看', 0, '1', 'report.advanceInfo', 65536, 'query', '/report/advanceInfo/query.do,/report/advanceInfo/view.do', '', 'report.advanceInfo.query');
+
+--第3步
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (3001, 'admin', 'report.advanceInfo', '', 1);
+
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (3002, 'admin', 'report.advanceInfo', 'report.advanceInfo.query', 65536);

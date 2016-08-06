@@ -1,0 +1,5 @@
+	<!-- 外部单位非关联方报表 -->
+	<package name="reportAccountRelation" extends="global-json" namespace="/report/accountRelation">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

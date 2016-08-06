@@ -1,0 +1,5 @@
+	<!-- 资产查询明细报表 -->
+	<package name="reportAccountCapitalDetail" extends="global-json" namespace="/report/accountCapitalDetail">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

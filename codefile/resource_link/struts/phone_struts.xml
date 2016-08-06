@@ -1,0 +1,5 @@
+	<!-- 个人电话费信息统计报表 -->
+	<package name="reportPhone" extends="global-json" namespace="/report/phone">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

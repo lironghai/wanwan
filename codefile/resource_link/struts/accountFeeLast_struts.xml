@@ -1,0 +1,5 @@
+	<!-- 预提费用余额报表 -->
+	<package name="reportAccountFeeLast" extends="global-json" namespace="/report/accountFeeLast">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

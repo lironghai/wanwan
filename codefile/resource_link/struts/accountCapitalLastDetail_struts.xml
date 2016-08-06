@@ -1,0 +1,5 @@
+	<!-- 固定资产采购余额明细报表 -->
+	<package name="reportAccountCapitalLastDetail" extends="global-json" namespace="/report/accountCapitalLastDetail">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

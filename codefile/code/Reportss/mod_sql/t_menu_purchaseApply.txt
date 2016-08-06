@@ -1,0 +1,20 @@
+--第1步
+insert into t_menu (ID, NAME, ORDINAL, STATUS, TYPE, PARENT_ID, MODULE, OPTIONS, REMARKS, ICON, NAMESPACE, i18n_key)
+values ('budget.purchaseApply', 'éè´­ç³è¯·', 0, '1', 'M', 'budget', 'Dictionary', '', '', '', '/budget/purchaseApply', 'budget.purchaseApply');
+
+--第2步
+insert into t_menu_action (ID, NAME, ORDINAL, STATUS, MENU_ID, PERMISSION_SCOPE, PERMISSION_ACTION, URI, REMARKS, i18n_key)
+values ('budget.purchaseApply.query', '查看', 0, '1', 'budget.purchaseApply', 65536, 'query', '/budget/purchaseApply/query.do,/budget/purchaseApply/view.do', '', 'budget.purchaseApply.query');
+
+insert into t_menu_action (ID, NAME, ORDINAL, STATUS, MENU_ID, PERMISSION_SCOPE, PERMISSION_ACTION, URI, REMARKS, i18n_key)
+values ('budget.purchaseApply.edit', '编辑', 1, '1', 'budget.purchaseApply', 65536, 'edit', '/budget/purchaseApply/save.do,/budget/purchaseApply/remove.do', '', 'budget.purchaseApply.query');
+
+--第3步
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (17, 'admin', 'budget.purchaseApply', '', 1);
+
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (18, 'admin', 'budget.purchaseApply', 'budget.purchaseApply.edit', 65536);
+
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (19, 'admin', 'budget.purchaseApply', 'budget.purchaseApply.query', 65536);

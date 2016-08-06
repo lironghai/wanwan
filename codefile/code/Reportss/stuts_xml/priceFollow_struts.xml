@@ -1,0 +1,5 @@
+	<!-- 采购价格跟踪报表 -->
+	<package name="reportPriceFollow" extends="global-json" namespace="/report/priceFollow">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

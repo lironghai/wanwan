@@ -1,0 +1,7 @@
+	<!-- 预算明细账 blog -->
+	<package name="BlogBudgetDetail" extends="global-json" namespace="/blog/budgetDetail">
+		<action name="query" class="blogAction" method="query"></action> 
+	</package>
+	Tue Jul 26 21:08:20 CST 2016
+	
+	

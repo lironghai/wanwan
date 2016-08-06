@@ -1,0 +1,7 @@
+	<!-- 押金和备用金信息统计 blog -->
+	<package name="BlogAdvancePrepareInfo" extends="global-json" namespace="/blog/advancePrepareInfo">
+		<action name="query" class="blogAction" method="query"></action> 
+	</package>
+	Tue Jul 26 21:08:20 CST 2016
+	
+	

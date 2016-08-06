@@ -1,0 +1,5 @@
+	<!-- 变动报表 -->
+	<package name="reportInvestmentChange" extends="global-json" namespace="/report/investmentChange">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

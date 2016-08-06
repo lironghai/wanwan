@@ -1,0 +1,5 @@
+	<!-- 基金债券交易报表 -->
+	<package name="reportInvestmentFound" extends="global-json" namespace="/report/investmentFound">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

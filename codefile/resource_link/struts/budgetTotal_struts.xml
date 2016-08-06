@@ -1,0 +1,5 @@
+	<!-- 预算月度季度年度费用使用情况汇总报表 -->
+	<package name="reportBudgetTotal" extends="global-json" namespace="/report/budgetTotal">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

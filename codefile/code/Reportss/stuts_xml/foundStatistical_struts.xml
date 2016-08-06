@@ -1,0 +1,5 @@
+	<!-- 账户综合查询报表 -->
+	<package name="reportFoundStatistical" extends="global-json" namespace="/report/foundStatistical">
+		<action name="query" class="reportAction" method="query"></action> 
+	</package>
+	

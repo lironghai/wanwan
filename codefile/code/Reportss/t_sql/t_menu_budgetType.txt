@@ -1,0 +1,20 @@
+--第1步
+insert into t_menu (ID, NAME, ORDINAL, STATUS, TYPE, PARENT_ID, MODULE, OPTIONS, REMARKS, ICON, NAMESPACE)
+values ('setting.budgetType', '预支类型', 0, '1', 'M', 'setting', 'Dictionary', '', '', '', '/setting/budgetType');
+
+--第2步
+insert into t_menu_action (ID, NAME, ORDINAL, STATUS, MENU_ID, PERMISSION_SCOPE, PERMISSION_ACTION, URI, REMARKS)
+values ('setting.budgetType.query', '查看', 0, '1', 'setting.budgetType', 65536, 'query', '/setting/budgetType/query.do,/setting/budgetType/view.do', '');
+
+insert into t_menu_action (ID, NAME, ORDINAL, STATUS, MENU_ID, PERMISSION_SCOPE, PERMISSION_ACTION, URI, REMARKS)
+values ('setting.budgetType.edit', '编辑', 1, '1', 'setting.budgetType', 65536, 'edit', '/setting/budgetType/save.do,/setting/budgetType/remove.do', '');
+
+--第3步
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (17, 'admin', 'setting.budgetType', '', 1);
+
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (18, 'admin', 'setting.budgetType', 'setting.budgetType.edit', 65536);
+
+insert into t_permission (ID, ROLE_ID, MENU_ID, MENU_ACTION_ID, LV)
+values (19, 'admin', 'setting.budgetType', 'setting.budgetType.query', 65536);

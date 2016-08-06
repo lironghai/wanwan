@@ -1,0 +1,7 @@
+	<!-- 采购价格跟踪 blog -->
+	<package name="BlogPriceFollow" extends="global-json" namespace="/blog/priceFollow">
+		<action name="query" class="blogAction" method="query"></action> 
+	</package>
+	Tue Jul 26 21:08:20 CST 2016
+	
+	
